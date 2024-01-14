@@ -1,1 +1,1 @@
-# SpringPratice_MVC
+# SpringPratice_Servlet
