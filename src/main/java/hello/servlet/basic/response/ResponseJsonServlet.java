@@ -7,6 +7,11 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.HandlerAdapter;
+import org.springframework.web.servlet.HandlerExecutionChain;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
 
@@ -25,4 +30,5 @@ public class ResponseJsonServlet extends HttpServlet {
         String result = objectMapper.writeValueAsString(helloData);
         resp.getWriter().write(result);
     }
+
 }
